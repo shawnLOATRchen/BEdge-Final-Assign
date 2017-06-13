@@ -112,7 +112,7 @@ class Calendar extends Component{
           events.push(detail);
         }
       })
-      days.push({num: day.num, events:events});
+      days.push({num: day.num, events:events, today:day.today});
     })
     this.setState({days})
   }
